@@ -1,5 +1,5 @@
 ---
-title: "Version Control in R with Phil Bowsher"
+title: "Version Control in R with Phil Bowsher and Cole Arendt"
 output: html_document
 ---
 
@@ -26,3 +26,21 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+```{r}
+
+
+ggplot(diamonds) +
+ aes(x = carat, fill = cut) +
+ geom_histogram(bins = 30L) +
+ scale_fill_hue() +
+ theme_minimal()
+
+
+```
+
+
+
+
+
